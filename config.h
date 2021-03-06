@@ -2,8 +2,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
-static const unsigned int gappx     = 0;        /* gap pixel between windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int gappx     = 4;        /* gap pixel between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -14,13 +14,15 @@ static const int sidepad            = 0;       /* horizontal padding of bar */
 static const char *fonts[]          = { "MesloLGS:pixelsize=13:antialias=true:autohint=true", "fontawesome:pixelsize=25:antialias=true:autohint=true" };
 //static const char *fonts[]          = {  "fontawesome:pixelsize=20:antialias=true:autohint=true" };
 static const char dmenufont[]       = {"monospace:size=15"};
-static const char col_gray1[]       = "#002b36"; //background grey color in staus bar
-static const char col_gray2[]       = "#282828";
-static const char col_gray3[]       = "#839496"; //text color... I think
-static const char col_gray4[]       = "#282c34";
-//static const char col_gray4[]       = "#000000"; //text color when selected in bar
-//static const char col_cyan[]        = "#3071db";
-static const char col_cyan[]        = "#839496"; //main color in dwm bar
+
+
+
+
+static const char col_gray1[]       = "#2e3440"; //background grey color in staus bar
+static const char col_gray2[]       = "#444444"; //border color when not selected
+static const char col_gray3[]       = "#d8dee9"; //text color... I think
+static const char col_gray4[]       = "#2e3440"; //text color when selected in bar
+static const char col_cyan[]        = "#ebcb8b"; //main color in dwm bar
 
 
 
