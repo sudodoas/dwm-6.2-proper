@@ -57,8 +57,8 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	//{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "pcmanfm",  NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "pcmanfm",    NULL,       NULL,       0,            1,           -1 },
+	{ "Firefox",    NULL,       NULL,       1 << 8,       0,           -1 },
 
 };
 
@@ -98,18 +98,24 @@ static Key keys[] = {
 	{ MODKEY,                       XK_z,      spawn,          {.v = zathuracmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
+
 	{ MODKEY,                       XK_t,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_n,      focusstack,     {.i = -1 } },
-	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_s,      setmfact,       {.f = +0.05} },
+
+	{ MODKEY|ShiftMask,             XK_h,      incnmaster,     {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_s,      incnmaster,     {.i = -1 } },
+    
+	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.01} },
+	{ MODKEY,                       XK_s,      setmfact,       {.f = +0.01} },
+
 	{ MODKEY,                       XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
+
 	{ MODKEY,                       XK_g,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
+
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
@@ -132,7 +138,7 @@ static Key keys[] = {
 
 
 
-	{ MODKEY,                       XK_q,      spawn,           SHCMD("brave") },
+	{ MODKEY,                       XK_q,      spawn,           SHCMD("qutebrowser") },
 	{ MODKEY,                       XK_w,      spawn,           SHCMD("st ranger") },
 	{ MODKEY,                       XK_a,      spawn,           SHCMD("sh /home/wifiengine/.scripts/dictionary/test.sh") },
     { MODKEY,                       XK_e,      spawn,           SHCMD("sh /home/wifiengine/.scripts/emojis/search.sh") },
@@ -151,11 +157,12 @@ static Key keys[] = {
 	{0, XF86XK_MonBrightnessDown,          	spawn,	SHCMD("light -U 3 & sh /home/wifiengine/.scripts/brightness.sh") },
 
 
-    { MODKEY|ShiftMask,             XK_t,      setcfact,       {.f = +0.25} },
-    { MODKEY|ShiftMask,             XK_n,      setcfact,       {.f = -0.25} },
+    { MODKEY|ShiftMask,             XK_t,      setcfact,       {.f = +0.1} },
+    { MODKEY|ShiftMask,             XK_n,      setcfact,       {.f = -0.1} },
 	{ MODKEY|ShiftMask,             XK_o,      setcfact,       {.f =  0.00} },
 
-
+    
+	{ MODKEY,                       XK_grave,      spawn,       SHCMD("sh ~/.scripts/shutdown/shutdown.sh") },
 
 
 };

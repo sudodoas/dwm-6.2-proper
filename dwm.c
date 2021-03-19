@@ -452,6 +452,7 @@ arrange(Monitor *m)
 		arrangemon(m);
 }
 
+
 void
 arrangemon(Monitor *m)
 {
