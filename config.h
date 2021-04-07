@@ -8,23 +8,26 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int barPadding         = 5;    //the height of the status bar
-static const int vertpad            = 0;       /* vertical padding of bar */
-static const int sidepad            = 0;       /* horizontal padding of bar */
+static const int vertpad            = 5;       /* vertical padding of bar */
+static const int sidepad            = 5;       /* horizontal padding of bar */
 //static const char *fonts[]          = {  "fontawesome:size=15", "monospace:size=12"};
-static const char *fonts[]          = { "MesloLGS:pixelsize=13:antialias=true:autohint=true", "fontawesome:pixelsize=25:antialias=true:autohint=true" };
+static const char *fonts[]          = { "MesloLGS:pixelsize=13:antialias=true:autohint=true", "fontawesome:pixelsize=20:antialias=true:autohint=true" };
 //static const char *fonts[]          = {  "fontawesome:pixelsize=20:antialias=true:autohint=true" };
 static const char dmenufont[]       = {"monospace:size=15"};
 
 
 
 
-static const char col_gray1[]       = "#2e3440"; //background grey color in staus bar
+//static const char col_gray1[]       = "#2e3440"; //background grey color in staus bar
+//static const char col_gray2[]       = "#444444"; //border color when not selected
+//static const char col_gray3[]       = "#d8dee9"; //text color... I think
+//static const char col_gray4[]       = "#2e3440"; //text color when selected in bar
+//static const char col_cyan[]        = "#ebcb8b"; //main color in dwm bar
+static const char col_gray1[]       = "#282828"; //background grey color in staus bar
 static const char col_gray2[]       = "#444444"; //border color when not selected
-static const char col_gray3[]       = "#d8dee9"; //text color... I think
-static const char col_gray4[]       = "#2e3440"; //text color when selected in bar
-static const char col_cyan[]        = "#ebcb8b"; //main color in dwm bar
-
-
+static const char col_gray3[]       = "#ebdbb2"; //text color... I think
+static const char col_gray4[]       = "#ebdbb2"; //text color when selected in bar
+static const char col_cyan[]        = "#cc241d"; //main color in dwm bar
 
 
 
